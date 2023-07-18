@@ -25,3 +25,14 @@ docker rm streaming
 ```shell
 docker rmi streaming
 ```
+
+## Docker compose commands
+### To build image and run
+```shell
+docker compose up -d
+```
+
+### To stop and remove the container (but doesn´t remove image)
+```shell
+docker compose down
+```
