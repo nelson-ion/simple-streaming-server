@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:              
+  server:
+    container_name: streaming
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '1935:1935'
+    command: ["/bin/sh", "-c", "/opt/run.sh"]
