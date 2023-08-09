@@ -1,4 +1,4 @@
-# Simple Sreaming Server as a docker container
+# Simple Streaming Server as a docker container
 
 ## Docker commands
 ### To compile image named `streaming`
