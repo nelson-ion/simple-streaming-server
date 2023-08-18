@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: streaming
+  name: streaming
+  namespace: default
+spec:
+  containers:
+  - command:
+    - /bin/sh
+    - /opt/run.sh
+    image: streaming
+    imagePullPolicy: Never
+    name: streaming
+    ports:
+    - containerPort: 1935
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
