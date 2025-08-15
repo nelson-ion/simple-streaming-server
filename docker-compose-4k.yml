@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:              
+  server:
+    container_name: streaming-4k
+    build:
+      context: ./
+      dockerfile: Dockerfile-4k
+    ports:
+      - '80:80'
+    command: ["/bin/sh", "-c", "/opt/run.sh"]
