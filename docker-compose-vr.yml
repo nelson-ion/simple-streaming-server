@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:              
+  server:
+    container_name: streaming-vr
+    build:
+      context: ./
+      dockerfile: Dockerfile-vr
+    ports:
+      - '8080:80'
+      - '8443:443'
+
+    command: ["/bin/sh", "-c", "/opt/run.sh"]
